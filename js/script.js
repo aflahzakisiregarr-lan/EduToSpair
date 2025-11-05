@@ -1,16 +1,21 @@
         // Text Animation for Hero Section
         const animatedText = document.getElementById('animated-text');
-        const text = "Belajar, Berkolaborasi, dan Berprestasi di EduSphere";
-        let index = 0;
-        
-        function typeWriter() {
-            if (index < text.length) {
-                animatedText.innerHTML = text.substring(0, index + 1) + '<span class="cursor">|</span>';
-                index++;
-                setTimeout(typeWriter, 100);
-            } else {
-                animatedText.innerHTML = text;
+        if (animatedText) { // Tambahkan pengecekan ini
+            const text = "Belajar, Berkolaborasi, dan Berprestasi di EduSphere";
+            let index = 0;
+            
+            function typeWriter() {
+                if (index < text.length) {
+                    animatedText.innerHTML = text.substring(0, index + 1) + '<span class="cursor">|</span>';
+                    index++;
+                    setTimeout(typeWriter, 100);
+                } else {
+                    animatedText.innerHTML = text;
+                }
             }
+            
+            // Pindahkan pemanggilan fungsi ke dalam pengecekan juga
+            window.addEventListener('load', typeWriter); 
         }
         
         // Modal functionality
@@ -139,4 +144,5 @@
                 header.style.background = 'rgba(255, 255, 255, 0.95)';
                 header.style.boxShadow = 'var(--shadow)';
             }
+
         });
