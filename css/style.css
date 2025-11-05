@@ -514,6 +514,12 @@
             font-size: 0.9rem;
         }
 
+        /* Styling for the All Courses page section */
+        .all-courses {
+            padding: 150px 0 100px;
+            background: var(--bg-light);
+        }
+
         /* Responsive Styles */
         @media (max-width: 992px) {
             .hero h1 {
@@ -573,4 +579,5 @@
             .modal-content {
                 padding: 30px 20px;
             }
+
         }
