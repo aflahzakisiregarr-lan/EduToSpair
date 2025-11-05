@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jelajahi Kursus - EduSphere</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>EduSphere</span>
+            </div>
+            <nav>
+                <ul>
+                    <!-- Tautan ini diubah agar kembali ke halaman utama (index.html) -->
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="index.html#features">Fitur</a></li>
+                    <li><a href="index.html#courses">Kursus Populer</a></li>
+                    <li><a href="index.html#about">Tentang</a></li>
+                    <li><a href="index.html#contact">Kontak</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button class="btn btn-outline" id="loginBtn">Masuk</button>
+                <button class="btn btn-primary" id="registerBtn">Daftar</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- All Courses Section -->
+    <section class="all-courses" id="all-courses-page">
+        <div class="container">
+            <div class="section-title">
+                <h2>Jelajahi Semua Kursus</h2>
+                <p>Temukan kursus yang tepat untuk meningkatkan keahlian Anda di berbagai bidang.</p>
+            </div>
+            <div class="courses-grid">
+                <!-- Course Card 1: Web Development -->
+                <div class="course-card">
+                    <div class="course-image">Web Development</div>
+                    <div class="course-content">
+                        <span class="course-category">Teknologi</span>
+                        <h3 class="course-title">Full Stack Web Development</h3>
+                        <p class="course-description">Pelajari pengembangan website dari frontend hingga backend dengan teknologi terbaru.</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 120 Jam</span>
+                            <span><i class="far fa-user"></i> 2.5K Siswa</span>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-bar"><div class="progress" style="width: 65%"></div></div>
+                            <div class="progress-text"><span>Progress</span><span>65%</span></div>
+                        </div>
+                        <button class="btn btn-primary" style="width: 100%;">Lanjutkan Belajar</button>
+                    </div>
+                </div>
+
+                <!-- Course Card 2: Data Science -->
+                <div class="course-card">
+                    <div class="course-image">Data Science</div>
+                    <div class="course-content">
+                        <span class="course-category">Data</span>
+                        <h3 class="course-title">Data Science & Machine Learning</h3>
+                        <p class="course-description">Kuasi teknik analisis data dan machine learning untuk karir di era digital.</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 90 Jam</span>
+                            <span><i class="far fa-user"></i> 1.8K Siswa</span>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-bar"><div class="progress" style="width: 30%"></div></div>
+                            <div class="progress-text"><span>Progress</span><span>30%</span></div>
+                        </div>
+                        <button class="btn btn-primary" style="width: 100%;">Lanjutkan Belajar</button>
+                    </div>
+                </div>
+
+                <!-- Course Card 3: UI/UX Design -->
+                <div class="course-card">
+                    <div class="course-image">UI/UX Design</div>
+                    <div class="course-content">
+                        <span class="course-category">Desain</span>
+                        <h3 class="course-title">UI/UX Design Masterclass</h3>
+                        <p class="course-description">Pelajari prinsip desain antarmuka dan pengalaman pengguna untuk aplikasi modern.</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 80 Jam</span>
+                            <span><i class="far fa-user"></i> 1.2K Siswa</span>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-bar"><div class="progress" style="width: 0%"></div></div>
+                            <div class="progress-text"><span>Progress</span><span>0%</span></div>
+                        </div>
+                        <button class="btn btn-primary" style="width: 100%;">Mulai Belajar</button>
+                    </div>
+                </div>
+
+                <!-- Course Card 4: Digital Marketing -->
+                <div class="course-card">
+                    <div class="course-image">Digital Marketing</div>
+                    <div class="course-content">
+                        <span class="course-category">Bisnis</span>
+                        <h3 class="course-title">Digital Marketing Essentials</h3>
+                        <p class="course-description">Strategi pemasaran online dari SEO, SEM, hingga media sosial untuk mengembangkan bisnis.</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 75 Jam</span>
+                            <span><i class="far fa-user"></i> 3.1K Siswa</span>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-bar"><div class="progress" style="width: 0%"></div></div>
+                            <div class="progress-text"><span>Progress</span><span>0%</span></div>
+                        </div>
+                        <button class="btn btn-primary" style="width: 100%;">Mulai Belajar</button>
+                    </div>
+                </div>
+
+                <!-- Course Card 5: Mobile Development -->
+                <div class="course-card">
+                    <div class="course-image">Mobile Development</div>
+                    <div class="course-content">
+                        <span class="course-category">Teknologi</span>
+                        <h3 class="course-title">Android & iOS App Development</h3>
+                        <p class="course-description">Bangun aplikasi mobile untuk platform Android dan iOS dari dasar menggunakan framework modern.</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 150 Jam</span>
+                            <span><i class="far fa-user"></i> 1.5K Siswa</span>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-bar"><div class="progress" style="width: 15%"></div></div>
+                            <div class="progress-text"><span>Progress</span><span>15%</span></div>
+                        </div>
+                        <button class="btn btn-primary" style="width: 100%;">Lanjutkan Belajar</button>
+                    </div>
+                </div>
+
+                <!-- Course Card 6: Cyber Security -->
+                <div class="course-card">
+                    <div class="course-image">Cyber Security</div>
+                    <div class="course-content">
+                        <span class="course-category">Keamanan</span>
+                        <h3 class="course-title">Cyber Security Fundamentals</h3>
+                        <p class="course-description">Pahami konsep dasar keamanan siber, ancaman, dan cara melindungi sistem digital Anda.</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 60 Jam</span>
+                            <span><i class="far fa-user"></i> 950 Siswa</span>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-bar"><div class="progress" style="width: 0%"></div></div>
+                            <div class="progress-text"><span>Progress</span><span>0%</span></div>
+                        </div>
+                        <button class="btn btn-primary" style="width: 100%;">Mulai Belajar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Modal (Sama seperti di index.html) -->
+    <div class="modal" id="loginModal">
+        <!-- Konten modal login disalin dari index.html -->
+    </div>
+
+    <!-- Register Modal (Sama seperti di index.html) -->
+    <div class="modal" id="registerModal">
+        <!-- Konten modal register disalin dari index.html -->
+    </div>
+
+    <!-- Footer (Sama seperti di index.html) -->
+    <footer>
+        <!-- Konten footer disalin dari index.html -->
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
